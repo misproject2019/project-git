@@ -1,0 +1,113 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'regi_fixed.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_FixedWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(360, 640)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.timeEdit_end = QtWidgets.QTimeEdit(self.centralwidget)
+        self.timeEdit_end.setGeometry(QtCore.QRect(190, 460, 121, 31))
+        self.timeEdit_end.setObjectName("timeEdit_end")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(10, 340, 120, 30))
+        self.label_5.setStyleSheet("font: 18pt \"PMingLiU\";")
+        self.label_5.setObjectName("label_5")
+        self.lineEdit_road = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_road.setGeometry(QtCore.QRect(60, 270, 231, 31))
+        self.lineEdit_road.setObjectName("lineEdit_road")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 220, 341, 31))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.comboBox_cities = QtWidgets.QComboBox(self.layoutWidget)
+        self.comboBox_cities.setObjectName("comboBox_cities")
+        self.horizontalLayout.addWidget(self.comboBox_cities)
+        self.comboBox_area = QtWidgets.QComboBox(self.layoutWidget)
+        self.comboBox_area.setObjectName("comboBox_area")
+        self.horizontalLayout.addWidget(self.comboBox_area)
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(150, 460, 18, 35))
+        self.label_6.setStyleSheet("font: 26pt \"PMingLiU\";\n"
+"")
+        self.label_6.setObjectName("label_6")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(9, 113, 132, 33))
+        self.label_2.setStyleSheet("font: 20pt \"PMingLiU\";\n"
+"font: 18pt \"PMingLiU\";")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(10, 160, 132, 33))
+        self.label_3.setStyleSheet("font: 20pt \"PMingLiU\";\n"
+"font: 18pt \"PMingLiU\";")
+        self.label_3.setObjectName("label_3")
+        self.label_pa = QtWidgets.QLabel(self.centralwidget)
+        self.label_pa.setGeometry(QtCore.QRect(140, 340, 51, 31))
+        self.label_pa.setStyleSheet("font: 16pt \"PMingLiU\";")
+        self.label_pa.setText("")
+        self.label_pa.setObjectName("label_pa")
+        self.layoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget_2.setGeometry(QtCore.QRect(31, 541, 291, 38))
+        self.layoutWidget_2.setObjectName("layoutWidget_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget_2)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.back_Button = QtWidgets.QPushButton(self.layoutWidget_2)
+        self.back_Button.setStyleSheet("font: 16pt \"PMingLiU\";")
+        self.back_Button.setObjectName("back_Button")
+        self.horizontalLayout_2.addWidget(self.back_Button)
+        self.next_Button = QtWidgets.QPushButton(self.layoutWidget_2)
+        self.next_Button.setStyleSheet("font: 16pt \"PMingLiU\";")
+        self.next_Button.setObjectName("next_Button")
+        self.horizontalLayout_2.addWidget(self.next_Button)
+        self.lineEdit_name = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_name.setGeometry(QtCore.QRect(200, 110, 151, 31))
+        self.lineEdit_name.setObjectName("lineEdit_name")
+        self.lineEdit_name_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_name_2.setGeometry(QtCore.QRect(200, 160, 151, 31))
+        self.lineEdit_name_2.setObjectName("lineEdit_name_2")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(10, 410, 120, 30))
+        self.label_4.setStyleSheet("font: 18pt \"PMingLiU\";")
+        self.label_4.setObjectName("label_4")
+        self.lineEdit_pn = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_pn.setGeometry(QtCore.QRect(200, 340, 151, 31))
+        self.lineEdit_pn.setObjectName("lineEdit_pn")
+        self.timeEdit_start = QtWidgets.QTimeEdit(self.centralwidget)
+        self.timeEdit_start.setGeometry(QtCore.QRect(10, 460, 121, 31))
+        self.timeEdit_start.setObjectName("timeEdit_start")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(110, 30, 132, 33))
+        self.label.setStyleSheet("font: 20pt \"PMingLiU\";")
+        self.label.setObjectName("label")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_5.setText(_translate("MainWindow", "聯絡電話"))
+        self.label_6.setText(_translate("MainWindow", "~"))
+        self.label_2.setText(_translate("MainWindow", "店家名稱"))
+        self.label_3.setText(_translate("MainWindow", "店家地址"))
+        self.back_Button.setText(_translate("MainWindow", "返回"))
+        self.next_Button.setText(_translate("MainWindow", "下一步"))
+        self.label_4.setText(_translate("MainWindow", "營業時間"))
+        self.label.setText(_translate("MainWindow", "修改資料"))
