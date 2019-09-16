@@ -2,13 +2,11 @@
 
 # Form implementation generated from reading ui file 'regi_info.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.11.3
 #
 # WARNING! All changes made in this file will be lost!
 
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_InfoWindow(object):
     def setupUi(self, InfoWindow):
@@ -25,23 +23,16 @@ class Ui_InfoWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.add_label = QtWidgets.QLabel(self.frame)
-        self.add_label.setGeometry(QtCore.QRect(131, 270, 212, 61))
+        self.add_label.setGeometry(QtCore.QRect(131, 300, 211, 101))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
         font.setPointSize(12)
         self.add_label.setFont(font)
         self.add_label.setText("")
+        self.add_label.setWordWrap(True)
         self.add_label.setObjectName("add_label")
-        self.tag_label = QtWidgets.QLabel(self.frame)
-        self.tag_label.setGeometry(QtCore.QRect(131, 350, 212, 28))
-        font = QtGui.QFont()
-        font.setFamily("Yu Gothic UI")
-        font.setPointSize(12)
-        self.tag_label.setFont(font)
-        self.tag_label.setText("")
-        self.tag_label.setObjectName("tag_label")
         self.label_6 = QtWidgets.QLabel(self.frame)
-        self.label_6.setGeometry(QtCore.QRect(30, 120, 101, 41))
+        self.label_6.setGeometry(QtCore.QRect(30, 110, 101, 41))
         self.label_6.setMinimumSize(QtCore.QSize(25, 25))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei UI")
@@ -63,7 +54,7 @@ class Ui_InfoWindow(object):
 "color: rgb(255, 255, 255);")
         self.mission_Button.setObjectName("mission_Button")
         self.pn_label = QtWidgets.QLabel(self.frame)
-        self.pn_label.setGeometry(QtCore.QRect(131, 80, 212, 28))
+        self.pn_label.setGeometry(QtCore.QRect(131, 73, 212, 31))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
         font.setPointSize(12)
@@ -82,7 +73,7 @@ class Ui_InfoWindow(object):
         self.label_5.setStyleSheet("color: rgb(230, 51, 76);")
         self.label_5.setObjectName("label_5")
         self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(30, 270, 80, 28))
+        self.label_4.setGeometry(QtCore.QRect(30, 310, 80, 28))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei UI")
         font.setPointSize(12)
@@ -103,24 +94,14 @@ class Ui_InfoWindow(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.time_label = QtWidgets.QLabel(self.frame)
-        self.time_label.setGeometry(QtCore.QRect(131, 120, 221, 141))
+        self.time_label.setGeometry(QtCore.QRect(131, 110, 221, 201))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
-        font.setPointSize(10)
+        font.setPointSize(12)
         self.time_label.setFont(font)
         self.time_label.setText("")
+        self.time_label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.time_label.setObjectName("time_label")
-        self.label_7 = QtWidgets.QLabel(self.frame)
-        self.label_7.setGeometry(QtCore.QRect(30, 350, 81, 31))
-        font = QtGui.QFont()
-        font.setFamily("Microsoft YaHei UI")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("color: rgb(230, 51, 76);")
-        self.label_7.setObjectName("label_7")
         self.fixed_Button = QtWidgets.QPushButton(self.frame)
         self.fixed_Button.setGeometry(QtCore.QRect(200, 580, 121, 41))
         font = QtGui.QFont()
@@ -132,12 +113,15 @@ class Ui_InfoWindow(object):
 "color: rgb(255, 255, 255);")
         self.fixed_Button.setObjectName("fixed_Button")
         self.score_label = QtWidgets.QLabel(self.frame)
-        self.score_label.setGeometry(QtCore.QRect(201, 20, 151, 31))
+        self.score_label.setGeometry(QtCore.QRect(280, 20, 71, 41))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
         font.setPointSize(12)
         self.score_label.setFont(font)
+        self.score_label.setStyleSheet("border-radius:20px;\n"
+"border:2px solid rgb(230, 51, 76);")
         self.score_label.setText("")
+        self.score_label.setAlignment(QtCore.Qt.AlignCenter)
         self.score_label.setObjectName("score_label")
         self.pushButton_arrow = QtWidgets.QPushButton(self.frame)
         self.pushButton_arrow.setGeometry(QtCore.QRect(0, 0, 50, 50))
@@ -149,6 +133,7 @@ class Ui_InfoWindow(object):
         self.pushButton_arrow.setObjectName("pushButton_arrow")
         self.webEngineView = QtWebEngineWidgets.QWebEngineView(self.frame)
         self.webEngineView.setGeometry(QtCore.QRect(30, 400, 301, 161))
+        self.webEngineView.setUrl(QtCore.QUrl("https://lh3.googleusercontent.com/p/AF1QipPx-4a7lCU73mJ2Nmerms-HSxIzGKzyRbArm51c=s1600-w400"))
         self.webEngineView.setObjectName("webEngineView")
         InfoWindow.setCentralWidget(self.centralwidget)
 
@@ -162,7 +147,7 @@ class Ui_InfoWindow(object):
         self.mission_Button.setText(_translate("InfoWindow", "新增任務"))
         self.label_5.setText(_translate("InfoWindow", "連絡電話"))
         self.label_4.setText(_translate("InfoWindow", "店家地址"))
-        self.label_7.setText(_translate("InfoWindow", "標       籤"))
         self.fixed_Button.setText(_translate("InfoWindow", "修改"))
+
 from PyQt5 import QtWebEngineWidgets
 import back_rc

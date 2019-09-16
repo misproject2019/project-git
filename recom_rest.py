@@ -16,6 +16,7 @@ class Resultwindow(QMainWindow, recom_rest_ui.Ui_MainWindow):
         self.setupUi(self)
         self.pushButton.clicked.connect(self.recomAgain)
         self.pushButton_2.clicked.connect(self.confirm)
+        
         self.label_2.setText(self.restName)
     def recomAgain(self):
         self.close()

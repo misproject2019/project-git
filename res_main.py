@@ -20,6 +20,7 @@ db = firebase.database()
 
 class RegiWindow(QMainWindow, Ui_MainWindow):
     global restid
+    userid=""
     def __init__(self, parent = None):
         super(RegiWindow, self).__init__(parent)
         self.setupUi(self)
@@ -194,6 +195,7 @@ class RegiWindow(QMainWindow, Ui_MainWindow):
             time = self.timeEdit_start.time().toString() + "~" +self.timeEdit_end.time().toString()
             data = {"name":str(self.lineEdit_name.text()), "phone":phone, "address":address, "time":time}
             db.child("restaurant").child(restid).set(data)
+            db.child("user").child(self.userid).update({"restid":restid})
         self.close()
         self.t=res_tag.TagWindow()
         self.t.show()

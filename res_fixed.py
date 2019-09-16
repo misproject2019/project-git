@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 import regi_fixed
 import res_info
 
-class FixedWindow(QMainWindow,regi_fixed.Ui_FixedWindow):
+class FixedWindow(QMainWindow,regi_fixed.Ui_MainWindow):
     def __init__(self, parent = None):
         super(FixedWindow, self).__init__(parent)
         self.setupUi(self)

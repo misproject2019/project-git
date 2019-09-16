@@ -15,7 +15,9 @@ df['user_id'] = df.index
 df['movieRow'] = df.index
 movies_df = df[['movieRow', 'rest_id']]
 movies_df.to_csv('rest1.csv', index=False, header=True, encoding='utf-8')
+
 ratings_df = pd.merge(df, movies_df, on='rest_id')
+print(ratings_df)
 ratings_df = ratings_df[['user_id', 'movieRow_x', 'score']]
 ratings_df.to_csv('score1.csv', index=False, header=True, encoding='utf-8')
 #第二步：-----------------------建立評分矩陣rating和評分紀錄矩陣record

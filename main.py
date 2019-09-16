@@ -14,8 +14,8 @@ import showTask
 import revise_npc
 import res_info
 import recommend
-import runmycollection
-import runcollection
+import collection
+import friendList
 import pyrebase
 config ={
     "apiKey": "AIzaSyAMpfbvKqf5vK-dzz5H2Osu6CJ5d1ionA0",
@@ -43,9 +43,12 @@ class Mainwindow(QDialog, main_ui.Ui_Dialog):
         self.pushButton.clicked.connect(self.recommend)
         
         self.pushButton_npc.clicked.connect(self.reviseNPC)
-        self.pushButton_rest.clicked.connect(self.restCheck)
         self.pushButton_task.clicked.connect(self.task)
-        self.pushButton_favorite.clicked.connect(self.runmycollection1)
+        
+        self.pushButton_favorite.clicked.connect(self.runcollection)
+        self.pushButton_friend.clicked.connect(self.friendlist)
+        
+        self.pushButton_rest.clicked.connect(self.restCheck)
         npc=db.child("user").child(self.userid).child("npc").get().val()
         if npc == "other.png":
             self.pushButton_npc.setStyleSheet('QPushButton{border-image:url(other.png)}')
@@ -69,7 +72,6 @@ class Mainwindow(QDialog, main_ui.Ui_Dialog):
         self.close()
         self.c=recommend.RecomWindow()
         self.c.show()
-    
     def reviseNPC(self):
         self.close()
         self.c=revise_npc.ReviseNPCwindow()
@@ -77,6 +79,10 @@ class Mainwindow(QDialog, main_ui.Ui_Dialog):
     def task(self):
         self.close()
         self.c=showTask.showTaskwindow()
+        self.c.show()
+    def friendlist(self):
+        self.close()
+        self.c=friendList.friendWindow()
         self.c.show()
     def restCheck(self):
         if self.restid == "0":
@@ -87,9 +93,9 @@ class Mainwindow(QDialog, main_ui.Ui_Dialog):
             self.close()
             self.i = res_info.InfoWindow()
             self.i.show()
-    def runmycollection1(self):
+    def runcollection(self):
         self.close()
-        self.c=runmycollection.MyWindow()
+        self.c=collection.MyWindow()
         self.c.show()
             
 if __name__ == "__main__":

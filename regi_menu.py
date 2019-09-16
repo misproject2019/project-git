@@ -30,7 +30,7 @@ class Ui_PhotoWindow(object):
         self.confirm_Button = QtWidgets.QPushButton(self.frame)
         self.confirm_Button.setGeometry(QtCore.QRect(130, 560, 111, 41))
         font = QtGui.QFont()
-        font.setFamily("華康粗圓體")
+        font.setFamily("Microsoft YaHei UI")
         font.setPointSize(12)
         self.confirm_Button.setFont(font)
         self.confirm_Button.setStyleSheet("background-color:rgb(230, 51, 76);\n"

@@ -46,7 +46,9 @@ class Registerwindow(QMainWindow, user_register_ui.Ui_MainWindow):
                     "password":self.lineEdit_pass.text(),
                     "gender":self.comboBox.currentText(),
                     "age":self.spinBox_age.value(),
-                    "restid":"0"}
+                    "restid":"0",
+                    "friend":"no",
+                    "collection":"no"}
             db.child("user").child(self.lineEdit_name.text()).set(data)
             npc.NPCwindow.userid=self.lineEdit_name.text()
             self.reset()

@@ -16,6 +16,10 @@ import revise_pass
 import revise_npc
 import res_info
 import recommend
+import friendList
+import addfriend
+import mycollection
+import res_main
 na=""
 import pyrebase 
 config ={
@@ -59,6 +63,10 @@ class Signinwindow(QDialog, user_signin_ui.Ui_Dialog):
                     revise_pass.ReviseInfowindow.userid=na
                     revise_npc.ReviseNPCwindow.userid=na
                     main.Mainwindow.userid=na
+                    friendList.friendWindow.userid=na
+                    addfriend.MyWindow.userid=na
+                    mycollection.MyWindow.userid=na
+                    res_main.RegiWindow.userid=na
                     main.Mainwindow.restid = db.child("user").child(user.key()).child("restid").get().val()
                     res_info.InfoWindow.restid = db.child("user").child(user.key()).child("restid").get().val()
                     recommend.RecomWindow.userid=na

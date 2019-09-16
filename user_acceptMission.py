@@ -7,10 +7,10 @@ Created on Wed Aug  7 00:46:17 2019
 
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from accept_ui import *
+import user_acceptMission_ui
 
 
-class MyWindow(QMainWindow, Ui_MainWindow):
+class MyWindow(QMainWindow, user_acceptMission_ui.Ui_MainWindow):
     def __init__(self, parent=None):
         super(MyWindow, self).__init__(parent)
         self.setupUi(self)

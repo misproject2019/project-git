@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         self.frame = QtWidgets.QFrame(self.centralwidget)
         self.frame.setGeometry(QtCore.QRect(0, 0, 270, 219))
         self.frame.setAutoFillBackground(False)
-        self.frame.setStyleSheet("background-color: rgb(255, 254, 248);")
+        self.frame.setStyleSheet("background-color: rgb(255, 250, 248);")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -37,10 +37,10 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QtWidgets.QPushButton(self.frame)
         self.pushButton_2.setGeometry(QtCore.QRect(150, 150, 91, 41))
         font = QtGui.QFont()
-        font.setFamily("華康粗圓體")
+        font.setFamily("Microsoft YaHei UI")
         font.setPointSize(10)
         self.pushButton_2.setFont(font)
-        self.pushButton_2.setStyleSheet("background-color:rgb(230, 51, 76);\n"
+        self.pushButton_2.setStyleSheet("background-color:rgb(230, 51, 76,230);\n"
 "border-radius:20px;\n"
 "color: rgb(255, 255, 255);")
         self.pushButton_2.setObjectName("pushButton_2")
@@ -69,11 +69,11 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.frame)
         self.pushButton.setGeometry(QtCore.QRect(30, 150, 91, 41))
         font = QtGui.QFont()
-        font.setFamily("華康粗圓體")
+        font.setFamily("Microsoft YaHei UI")
         font.setPointSize(10)
         self.pushButton.setFont(font)
         self.pushButton.setAutoFillBackground(False)
-        self.pushButton.setStyleSheet("background-color:rgb(230, 51, 76);\n"
+        self.pushButton.setStyleSheet("background-color:rgb(230, 51, 76,230);\n"
 "border-radius:20px;\n"
 "color: rgb(255, 255, 255);")
         self.pushButton.setObjectName("pushButton")

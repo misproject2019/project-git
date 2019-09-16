@@ -1,5 +1,14 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'reg_info.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtCore import QUrl
 import regi_info
 import res_fixed
 import RCTWindow
@@ -32,10 +41,9 @@ class InfoWindow(QMainWindow,regi_info.Ui_InfoWindow):
         opening_time = "\n".join(time)
         self.time_label.setText(opening_time)
         self.pn_label.setText(db.child("restaurant").child(self.restid).child("phone").get().val())
-        self.tag_label.setText(db.child("restaurant").child(self.restid).child("tag").get().val())
         self.score_label.setText(str(db.child("restaurant").child(self.restid).child("rating").get().val()))
         self.pushButton_arrow.setStyleSheet('QPushButton{border-image:url(arrow.png)}')
-        self.webEngineView.setUrl(QtCore.QUrl(db.child("restaurant").child(self.restid).child("photos").get().val()))
+        self.webEngineView.setUrl(QUrl(db.child("restaurant").child(self.restid).child("photos").get().val()))
         RCTWindow.RCTWindow.restna=db.child("restaurant").child(self.restid).child("name").get().val()
         self.pushButton_arrow.setStyleSheet('QPushButton{border-image:url(arrow.png)}')
         self.pushButton_arrow.clicked.connect(self.main)

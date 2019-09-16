@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 16 19:24:16 2019
+
+@author: Julia
+"""
+
 import googlemaps
 import time
 import pyrebase
@@ -68,4 +75,3 @@ for result in stores_info:
         else:
             db.child("restaurant").child(restid).set(data)
             '''
-    

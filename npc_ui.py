@@ -20,7 +20,7 @@ class Ui_Dialog(object):
         self.label.setGeometry(QtCore.QRect(10, 120, 171, 50))
         self.label.setMinimumSize(QtCore.QSize(0, 50))
         font = QtGui.QFont()
-        font.setFamily("華康粗圓體")
+        font.setFamily("Microsoft YaHei UI")
         font.setPointSize(12)
         self.label.setFont(font)
         self.label.setStyleSheet("color: rgb(230, 51, 76);")
@@ -63,12 +63,12 @@ class Ui_Dialog(object):
         self.radioButton_other.setIconSize(QtCore.QSize(111, 111))
         self.radioButton_other.setObjectName("radioButton_other")
         self.pushButton_npc = QtWidgets.QPushButton(Dialog)
-        self.pushButton_npc.setGeometry(QtCore.QRect(120, 530, 121, 41))
+        self.pushButton_npc.setGeometry(QtCore.QRect(110, 540, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
         font.setPointSize(12)
         self.pushButton_npc.setFont(font)
-        self.pushButton_npc.setStyleSheet("background-color:rgb(230, 51, 76);\n"
+        self.pushButton_npc.setStyleSheet("background-color:rgb(230, 51, 76,230);\n"
 "border-radius:20px;\n"
 "color: rgb(255, 255, 255);")
         self.pushButton_npc.setObjectName("pushButton_npc")

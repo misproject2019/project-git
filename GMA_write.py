@@ -4,13 +4,12 @@ import json
 
 gmaps = googlemaps.Client(key="AIzaSyCI3YcPn9vLcIJgIjSR51xzhD7Ghrar9zU ")
 
-g = input("請輸入地址")
-geocode_result = gmaps.geocode(g)
+geocode_result = gmaps.geocode("中央大學")
 
 ids = []
 results = []
 loc = geocode_result[0]['geometry']['location']
-query_result = gmaps.places_nearby(keyword = "咖啡店",location = loc, radius = 5000)
+query_result = gmaps.places_nearby(keyword = "餐廳", location = loc, radius = 1000)
 results.extend(query_result['results'])
 
 while query_result.get('next_page_token'):

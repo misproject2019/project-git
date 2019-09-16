@@ -1,0 +1,105 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'RTaskList.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(360, 640)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 360, 640))
+        self.frame.setStyleSheet("QFrame{\n"
+"background-image: url(:/back/back.png);\n"
+"}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.scrollArea = QtWidgets.QScrollArea(self.frame)
+        self.scrollArea.setGeometry(QtCore.QRect(20, 100, 321, 511))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 319, 509))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.pushButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton.setGeometry(QtCore.QRect(10, 20, 291, 41))
+        self.pushButton.setText("")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_2.setGeometry(QtCore.QRect(10, 73, 291, 41))
+        self.pushButton_2.setText("")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_3.setEnabled(True)
+        self.pushButton_3.setGeometry(QtCore.QRect(10, 190, 291, 41))
+        self.pushButton_3.setText("")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_4.setGeometry(QtCore.QRect(10, 130, 291, 41))
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_5.setEnabled(True)
+        self.pushButton_5.setGeometry(QtCore.QRect(10, 310, 291, 41))
+        self.pushButton_5.setText("")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_6.setEnabled(True)
+        self.pushButton_6.setGeometry(QtCore.QRect(10, 250, 291, 41))
+        self.pushButton_6.setText("")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.pushButton_7 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_7.setGeometry(QtCore.QRect(10, 510, 271, 34))
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.pushButton_8 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_8.setEnabled(True)
+        self.pushButton_8.setGeometry(QtCore.QRect(10, 370, 291, 41))
+        self.pushButton_8.setText("")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(140, 50, 101, 41))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI")
+        font.setPointSize(14)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_nowUser = QtWidgets.QLabel(self.frame)
+        self.label_nowUser.setGeometry(QtCore.QRect(100, 17, 171, 31))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI")
+        font.setPointSize(12)
+        self.label_nowUser.setFont(font)
+        self.label_nowUser.setText("")
+        self.label_nowUser.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_nowUser.setObjectName("label_nowUser")
+        self.pushButton_arrow = QtWidgets.QPushButton(self.frame)
+        self.pushButton_arrow.setGeometry(QtCore.QRect(0, 0, 50, 50))
+        self.pushButton_arrow.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("arrow.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_arrow.setIcon(icon)
+        self.pushButton_arrow.setIconSize(QtCore.QSize(50, 50))
+        self.pushButton_arrow.setObjectName("pushButton_arrow")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton_7.setText(_translate("Form", "PushButton"))
+        self.label.setText(_translate("Form", "任務列表"))
+
+import back_rc

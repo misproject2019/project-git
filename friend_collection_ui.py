@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mycollection.ui'
+# Form implementation generated from reading ui file 'friend_collection.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -11,7 +11,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
+        MainWindow.setEnabled(True)
         MainWindow.resize(360, 640)
+        MainWindow.setAnimated(True)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(self.centralwidget)
@@ -59,13 +61,29 @@ class Ui_MainWindow(object):
         self.alltask = QtWidgets.QWidget()
         self.alltask.setObjectName("alltask")
         self.pushButton_2 = QtWidgets.QPushButton(self.alltask)
-        self.pushButton_2.setGeometry(QtCore.QRect(40, 10, 261, 50))
+        self.pushButton_2.setGeometry(QtCore.QRect(10, 10, 311, 41))
         font = QtGui.QFont()
         font.setFamily("Yu Gothic UI")
         font.setPointSize(12)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setFlat(True)
         self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.alltask)
+        self.pushButton_3.setGeometry(QtCore.QRect(10, 50, 311, 41))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI")
+        font.setPointSize(12)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setFlat(True)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.alltask)
+        self.pushButton_4.setGeometry(QtCore.QRect(10, 90, 311, 41))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI")
+        font.setPointSize(12)
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setFlat(True)
+        self.pushButton_4.setObjectName("pushButton_4")
         self.pushButton_9 = QtWidgets.QPushButton(self.alltask)
         self.pushButton_9.setGeometry(QtCore.QRect(10, 450, 311, 41))
         font = QtGui.QFont()
@@ -96,8 +114,10 @@ class Ui_MainWindow(object):
         self.pushButton_8.setText(_translate("MainWindow", "返回"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.mytask), _translate("MainWindow", "         地圖         "))
         self.pushButton_2.setText(_translate("MainWindow", "1"))
+        self.pushButton_3.setText(_translate("MainWindow", "1"))
+        self.pushButton_4.setText(_translate("MainWindow", "1"))
         self.pushButton_9.setText(_translate("MainWindow", "返回"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.alltask), _translate("MainWindow", "     美食清單      "))
-        self.label_2.setText(_translate("MainWindow", "我的收藏夾"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.alltask), _translate("MainWindow", "      美食清單      "))
+        self.label_2.setText(_translate("MainWindow", "共同收藏夾"))
 
 import back_rc
